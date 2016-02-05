@@ -1,5 +1,5 @@
 //
-//  NEAppHTTPProxyProvider.swift
+//  AppHTTPProxyProvider.swift
 //
 //  Created by Tomasen on 2/5/16.
 //  Copyright © 2016 PINIDEA LLC. All rights reserved.
@@ -16,8 +16,8 @@ struct HTTPProxySet {
 
 var proxy = HTTPProxySet(host: "127.0.0.1", port: 3028)
 
-/// A NEAppHTTPProxyProvider sub-class that implements the client side of the http proxy tunneling protocol.
-class NEAppHTTPProxyProvider: NEAppProxyProvider {
+/// A AppHTTPProxyProvider sub-class that implements the client side of the http proxy tunneling protocol.
+class AppHTTPProxyProvider: NEAppProxyProvider {
     
     /// Begin the process of establishing the tunnel.
     override func startProxyWithOptions(options: [String : AnyObject]?, completionHandler: (NSError?) -> Void) {

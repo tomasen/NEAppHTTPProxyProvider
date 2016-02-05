@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Web View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="appproxy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WebViewController" customModule="appproxy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +16,27 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JU6-6c-faB">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JU6-6c-faB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KsD-k3-JGW"/>
+                            <constraint firstItem="JU6-6c-faB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="NmX-Vo-fDN"/>
+                            <constraint firstItem="JU6-6c-faB" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="dxy-Yj-BWu"/>
+                            <constraint firstAttribute="trailing" secondItem="JU6-6c-faB" secondAttribute="trailing" id="mUT-xB-7mi"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="wv" destination="JU6-6c-faB" id="PpB-Gm-GIy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="241" y="338"/>
         </scene>
     </scenes>
 </document>

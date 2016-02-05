@@ -8,18 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		88D0E6071C63D5E300C50B49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D0E6061C63D5E300C50B49 /* AppDelegate.swift */; };
-		88D0E6091C63D5E300C50B49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D0E6081C63D5E300C50B49 /* ViewController.swift */; };
 		88D0E60C1C63D5E300C50B49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88D0E60A1C63D5E300C50B49 /* Main.storyboard */; };
 		88D0E60E1C63D5E300C50B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88D0E60D1C63D5E300C50B49 /* Assets.xcassets */; };
 		88D0E6111C63D5E300C50B49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88D0E60F1C63D5E300C50B49 /* LaunchScreen.storyboard */; };
 		88D0E61C1C63D5E300C50B49 /* appproxyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D0E61B1C63D5E300C50B49 /* appproxyTests.swift */; };
 		88D0E6271C63D5E300C50B49 /* appproxyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D0E6261C63D5E300C50B49 /* appproxyUITests.swift */; };
-		88D0E6351C63D77600C50B49 /* NEAppHTTPProxyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D0E6341C63D77600C50B49 /* NEAppHTTPProxyProvider.swift */; };
-		88D0E6361C63D77600C50B49 /* NEAppHTTPProxyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D0E6341C63D77600C50B49 /* NEAppHTTPProxyProvider.swift */; };
-		88D0E6371C63D77600C50B49 /* NEAppHTTPProxyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D0E6341C63D77600C50B49 /* NEAppHTTPProxyProvider.swift */; };
+		88D0E6351C63D77600C50B49 /* AppHTTPProxyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D0E6341C63D77600C50B49 /* AppHTTPProxyProvider.swift */; };
+		88D0E6361C63D77600C50B49 /* AppHTTPProxyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D0E6341C63D77600C50B49 /* AppHTTPProxyProvider.swift */; };
+		88D0E6371C63D77600C50B49 /* AppHTTPProxyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D0E6341C63D77600C50B49 /* AppHTTPProxyProvider.swift */; };
 		88D0E6411C65296B00C50B49 /* CocoaAsyncSocket in Resources */ = {isa = PBXBuildFile; fileRef = 88D0E6401C65296B00C50B49 /* CocoaAsyncSocket */; };
 		88D0E6421C65296B00C50B49 /* CocoaAsyncSocket in Resources */ = {isa = PBXBuildFile; fileRef = 88D0E6401C65296B00C50B49 /* CocoaAsyncSocket */; };
 		88D0E6431C65296B00C50B49 /* CocoaAsyncSocket in Resources */ = {isa = PBXBuildFile; fileRef = 88D0E6401C65296B00C50B49 /* CocoaAsyncSocket */; };
+		88D5D3211C65508C00314932 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D5D3201C65508C00314932 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +70,6 @@
 /* Begin PBXFileReference section */
 		88D0E6031C63D5E300C50B49 /* appproxy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appproxy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88D0E6061C63D5E300C50B49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		88D0E6081C63D5E300C50B49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		88D0E60B1C63D5E300C50B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88D0E60D1C63D5E300C50B49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88D0E6101C63D5E300C50B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -81,9 +80,10 @@
 		88D0E6221C63D5E300C50B49 /* appproxyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = appproxyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88D0E6261C63D5E300C50B49 /* appproxyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appproxyUITests.swift; sourceTree = "<group>"; };
 		88D0E6281C63D5E300C50B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		88D0E6341C63D77600C50B49 /* NEAppHTTPProxyProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NEAppHTTPProxyProvider.swift; path = ../../NEAppHTTPProxyProvider.swift; sourceTree = "<group>"; };
+		88D0E6341C63D77600C50B49 /* AppHTTPProxyProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppHTTPProxyProvider.swift; path = ../../AppHTTPProxyProvider.swift; sourceTree = "<group>"; };
 		88D0E6401C65296B00C50B49 /* CocoaAsyncSocket */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CocoaAsyncSocket; path = ../../CocoaAsyncSocket; sourceTree = "<group>"; };
 		88D0E6441C652AE600C50B49 /* CocoaAsyncSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocoaAsyncSocket.xcodeproj; path = ../CocoaAsyncSocket/CocoaAsyncSocket.xcodeproj; sourceTree = "<group>"; };
+		88D5D3201C65508C00314932 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,8 +137,8 @@
 			children = (
 				88D0E6401C65296B00C50B49 /* CocoaAsyncSocket */,
 				88D0E6061C63D5E300C50B49 /* AppDelegate.swift */,
-				88D0E6081C63D5E300C50B49 /* ViewController.swift */,
-				88D0E6341C63D77600C50B49 /* NEAppHTTPProxyProvider.swift */,
+				88D5D3201C65508C00314932 /* WebViewController.swift */,
+				88D0E6341C63D77600C50B49 /* AppHTTPProxyProvider.swift */,
 				88D0E60A1C63D5E300C50B49 /* Main.storyboard */,
 				88D0E60D1C63D5E300C50B49 /* Assets.xcassets */,
 				88D0E60F1C63D5E300C50B49 /* LaunchScreen.storyboard */,
@@ -340,9 +340,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88D0E6091C63D5E300C50B49 /* ViewController.swift in Sources */,
 				88D0E6071C63D5E300C50B49 /* AppDelegate.swift in Sources */,
-				88D0E6351C63D77600C50B49 /* NEAppHTTPProxyProvider.swift in Sources */,
+				88D0E6351C63D77600C50B49 /* AppHTTPProxyProvider.swift in Sources */,
+				88D5D3211C65508C00314932 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,7 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88D0E6361C63D77600C50B49 /* NEAppHTTPProxyProvider.swift in Sources */,
+				88D0E6361C63D77600C50B49 /* AppHTTPProxyProvider.swift in Sources */,
 				88D0E61C1C63D5E300C50B49 /* appproxyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,7 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88D0E6371C63D77600C50B49 /* NEAppHTTPProxyProvider.swift in Sources */,
+				88D0E6371C63D77600C50B49 /* AppHTTPProxyProvider.swift in Sources */,
 				88D0E6271C63D5E300C50B49 /* appproxyUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
