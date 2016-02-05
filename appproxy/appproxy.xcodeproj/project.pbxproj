@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		888783741C655E82008A9E83 /* httpproxy.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8887836A1C655E82008A9E83 /* httpproxy.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		888783791C655F6F008A9E83 /* AppHTTPProxyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D0E6341C63D77600C50B49 /* AppHTTPProxyProvider.swift */; };
 		88D0E6071C63D5E300C50B49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D0E6061C63D5E300C50B49 /* AppDelegate.swift */; };
 		88D0E60C1C63D5E300C50B49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88D0E60A1C63D5E300C50B49 /* Main.storyboard */; };
 		88D0E60E1C63D5E300C50B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88D0E60D1C63D5E300C50B49 /* Assets.xcassets */; };
 		88D0E6111C63D5E300C50B49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88D0E60F1C63D5E300C50B49 /* LaunchScreen.storyboard */; };
 		88D0E61C1C63D5E300C50B49 /* appproxyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D0E61B1C63D5E300C50B49 /* appproxyTests.swift */; };
 		88D0E6271C63D5E300C50B49 /* appproxyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D0E6261C63D5E300C50B49 /* appproxyUITests.swift */; };
-		88D0E6351C63D77600C50B49 /* AppHTTPProxyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D0E6341C63D77600C50B49 /* AppHTTPProxyProvider.swift */; };
 		88D0E6361C63D77600C50B49 /* AppHTTPProxyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D0E6341C63D77600C50B49 /* AppHTTPProxyProvider.swift */; };
 		88D0E6371C63D77600C50B49 /* AppHTTPProxyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D0E6341C63D77600C50B49 /* AppHTTPProxyProvider.swift */; };
 		88D0E6411C65296B00C50B49 /* CocoaAsyncSocket in Resources */ = {isa = PBXBuildFile; fileRef = 88D0E6401C65296B00C50B49 /* CocoaAsyncSocket */; };
@@ -23,6 +24,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		888783711C655E82008A9E83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88D0E5FB1C63D5E300C50B49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 888783691C655E82008A9E83;
+			remoteInfo = httpproxy;
+		};
+		8887837A1C656043008A9E83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88D0E6441C652AE600C50B49 /* CocoaAsyncSocket.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CD9900F1B77868C0011A685;
+			remoteInfo = "iOS CocoaAsyncSocket";
+		};
 		88D0E6181C63D5E300C50B49 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 88D0E5FB1C63D5E300C50B49 /* Project object */;
@@ -58,16 +73,26 @@
 			remoteGlobalIDString = 7D8B70C41BCFA15700D8E273;
 			remoteInfo = "tvOS CocoaAsyncSocket";
 		};
-		88D0E6501C652AF700C50B49 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 88D0E6441C652AE600C50B49 /* CocoaAsyncSocket.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 6CD9900F1B77868C0011A685;
-			remoteInfo = "iOS CocoaAsyncSocket";
-		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		888783731C655E82008A9E83 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				888783741C655E82008A9E83 /* httpproxy.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		8887836A1C655E82008A9E83 /* httpproxy.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = httpproxy.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		888783701C655E82008A9E83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		888783781C655F28008A9E83 /* httpproxy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = httpproxy.entitlements; sourceTree = "<group>"; };
 		88D0E6031C63D5E300C50B49 /* appproxy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appproxy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88D0E6061C63D5E300C50B49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88D0E60B1C63D5E300C50B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -87,6 +112,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		888783671C655E82008A9E83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		88D0E6001C63D5E300C50B49 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -111,6 +143,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8887836B1C655E82008A9E83 /* httpproxy */ = {
+			isa = PBXGroup;
+			children = (
+				888783781C655F28008A9E83 /* httpproxy.entitlements */,
+				88D0E6341C63D77600C50B49 /* AppHTTPProxyProvider.swift */,
+				888783701C655E82008A9E83 /* Info.plist */,
+			);
+			path = httpproxy;
+			sourceTree = "<group>";
+		};
 		88D0E5FA1C63D5E300C50B49 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +160,7 @@
 				88D0E6051C63D5E300C50B49 /* appproxy */,
 				88D0E61A1C63D5E300C50B49 /* appproxyTests */,
 				88D0E6251C63D5E300C50B49 /* appproxyUITests */,
+				8887836B1C655E82008A9E83 /* httpproxy */,
 				88D0E6041C63D5E300C50B49 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -128,6 +171,7 @@
 				88D0E6031C63D5E300C50B49 /* appproxy.app */,
 				88D0E6171C63D5E300C50B49 /* appproxyTests.xctest */,
 				88D0E6221C63D5E300C50B49 /* appproxyUITests.xctest */,
+				8887836A1C655E82008A9E83 /* httpproxy.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,7 +182,6 @@
 				88D0E6401C65296B00C50B49 /* CocoaAsyncSocket */,
 				88D0E6061C63D5E300C50B49 /* AppDelegate.swift */,
 				88D5D3201C65508C00314932 /* WebViewController.swift */,
-				88D0E6341C63D77600C50B49 /* AppHTTPProxyProvider.swift */,
 				88D0E60A1C63D5E300C50B49 /* Main.storyboard */,
 				88D0E60D1C63D5E300C50B49 /* Assets.xcassets */,
 				88D0E60F1C63D5E300C50B49 /* LaunchScreen.storyboard */,
@@ -178,6 +221,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		888783691C655E82008A9E83 /* httpproxy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 888783751C655E82008A9E83 /* Build configuration list for PBXNativeTarget "httpproxy" */;
+			buildPhases = (
+				888783661C655E82008A9E83 /* Sources */,
+				888783671C655E82008A9E83 /* Frameworks */,
+				888783681C655E82008A9E83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8887837B1C656043008A9E83 /* PBXTargetDependency */,
+			);
+			name = httpproxy;
+			productName = httpproxy;
+			productReference = 8887836A1C655E82008A9E83 /* httpproxy.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		88D0E6021C63D5E300C50B49 /* appproxy */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88D0E62B1C63D5E300C50B49 /* Build configuration list for PBXNativeTarget "appproxy" */;
@@ -185,11 +246,12 @@
 				88D0E5FF1C63D5E300C50B49 /* Sources */,
 				88D0E6001C63D5E300C50B49 /* Frameworks */,
 				88D0E6011C63D5E300C50B49 /* Resources */,
+				888783731C655E82008A9E83 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				88D0E6511C652AF700C50B49 /* PBXTargetDependency */,
+				888783721C655E82008A9E83 /* PBXTargetDependency */,
 			);
 			name = appproxy;
 			productName = appproxy;
@@ -242,6 +304,15 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "PINIDEA LLC.";
 				TargetAttributes = {
+					888783691C655E82008A9E83 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = M6GT4ZS5X7;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
 					88D0E6021C63D5E300C50B49 = {
 						CreatedOnToolsVersion = 7.2;
 					};
@@ -277,6 +348,7 @@
 				88D0E6021C63D5E300C50B49 /* appproxy */,
 				88D0E6161C63D5E300C50B49 /* appproxyTests */,
 				88D0E6211C63D5E300C50B49 /* appproxyUITests */,
+				888783691C655E82008A9E83 /* httpproxy */,
 			);
 		};
 /* End PBXProject section */
@@ -306,6 +378,13 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		888783681C655E82008A9E83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		88D0E6011C63D5E300C50B49 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -336,12 +415,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		888783661C655E82008A9E83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				888783791C655F6F008A9E83 /* AppHTTPProxyProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		88D0E5FF1C63D5E300C50B49 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				88D0E6071C63D5E300C50B49 /* AppDelegate.swift in Sources */,
-				88D0E6351C63D77600C50B49 /* AppHTTPProxyProvider.swift in Sources */,
 				88D5D3211C65508C00314932 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,6 +453,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		888783721C655E82008A9E83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 888783691C655E82008A9E83 /* httpproxy */;
+			targetProxy = 888783711C655E82008A9E83 /* PBXContainerItemProxy */;
+		};
+		8887837B1C656043008A9E83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "iOS CocoaAsyncSocket";
+			targetProxy = 8887837A1C656043008A9E83 /* PBXContainerItemProxy */;
+		};
 		88D0E6191C63D5E300C50B49 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 88D0E6021C63D5E300C50B49 /* appproxy */;
@@ -376,11 +472,6 @@
 			isa = PBXTargetDependency;
 			target = 88D0E6021C63D5E300C50B49 /* appproxy */;
 			targetProxy = 88D0E6231C63D5E300C50B49 /* PBXContainerItemProxy */;
-		};
-		88D0E6511C652AF700C50B49 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "iOS CocoaAsyncSocket";
-			targetProxy = 88D0E6501C652AF700C50B49 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -404,6 +495,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		888783761C655E82008A9E83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = httpproxy/httpproxy.entitlements;
+				INFOPLIST_FILE = httpproxy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.pinidea.appproxy.httpproxy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		888783771C655E82008A9E83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = httpproxy/httpproxy.entitlements;
+				INFOPLIST_FILE = httpproxy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.pinidea.appproxy.httpproxy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		88D0E6291C63D5E300C50B49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -491,6 +608,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = appproxy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.pinidea.appproxy;
@@ -502,6 +620,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = appproxy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.pinidea.appproxy;
@@ -560,6 +679,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		888783751C655E82008A9E83 /* Build configuration list for PBXNativeTarget "httpproxy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				888783761C655E82008A9E83 /* Debug */,
+				888783771C655E82008A9E83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		88D0E5FE1C63D5E300C50B49 /* Build configuration list for PBXProject "appproxy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
